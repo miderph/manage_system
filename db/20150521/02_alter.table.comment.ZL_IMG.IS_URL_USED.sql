@@ -1,0 +1,1 @@
+comment on column ZL_IMG.IS_URL_USED is '0使用url_little竖图, 1 使用url横图，2 使用url_icon小方型图，3 使用URL_4_SQUARES四格图，4 使用URL_6_SQUARES六格图';

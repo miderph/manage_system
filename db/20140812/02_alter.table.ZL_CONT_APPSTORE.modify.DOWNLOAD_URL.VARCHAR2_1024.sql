@@ -1,0 +1,1 @@
+alter table ZL_CONT_APPSTORE modify DOWNLOAD_URL VARCHAR2(1024);

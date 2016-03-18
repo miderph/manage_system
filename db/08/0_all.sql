@@ -1,0 +1,11 @@
+@1_0_add_locked_zl_img_cont_appstore.sql
+@1_1_create_zl_app_download_url.sql
+@1_2_alert_zl_app_download_url.sql
+@1_3_alter_zl_app_download_url_expired_to_date.sql
+@1_4_al_zl_app_download_url.sql
+@1_5_trg_zl_app_download_url.trg
+@2_init_data_zl_app_download_url.sql
+@3_v_base_checkupdate_client.sql
+@5_v_getappdownloadurl_client.sql
+@6_v_checkupdate_client.sql
+@7_v_batchcheckupdate_client.sql

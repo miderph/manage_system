@@ -1,0 +1,14 @@
+@01_create.trigger.trg_zl_cont.sql
+@01_create.trigger.trg_zl_img.sql
+@02_alter.table.ZL_CONT.LOCKED.not_null.sql
+@02_alter.table.ZL_CONT_SALES.add.update_status.sql
+@02_alter.table.ZL_CONT_SALES_IMPORT.modify.PINYIN.sql
+@02_alter.table.zl_cont_video_file.modify.PLAY_URL.sql
+@02_alter.table.ZL_IMG.LOCKED.not_null.sql
+@02_alter.table.ZL_RELA_MENU_CONT.LOCKED.not_null.sql
+@02_create.index.pk_ZL_CONT_SALES_IMPORT.sql
+@11_create.or.replace.function.as_sum_stock.sql
+@11_create.or.replace.proc_import_sales_deal.sql
+@11_create.or.replace.proc_import_sales_delete_deal.sql
+@11_create.or.replace.proc_import_sales_insert_deal.sql
+@11_create.or.replace.proc_import_sales_update_deal.sql

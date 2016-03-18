@@ -1,0 +1,14 @@
+@1_add_is_url_used.sql
+@1_add_link_url.sql
+@1_add_superscript_id.sql
+@1_add_url_4_6.sql
+@2_v_base_content_client.sql
+@2_v_base_img_for_cont_client.sql
+@2_v_base_img_for_menu_client.sql
+@2_v_getcontentlist_client.sql
+--@3_insert.sql
+@4_alter.sql
+@4_update_access_type.sql
+@5_access_log_dicts_table.sql
+@5_insert_zl_access_log_dicts.sql
+@6_1_insert_zl_status_dict.sql

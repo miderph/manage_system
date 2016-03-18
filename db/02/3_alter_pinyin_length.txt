@@ -1,0 +1,2 @@
+-- Add/modify columns 
+alter table ZL_CONT modify pinyin VARCHAR2(2000);

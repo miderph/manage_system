@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 用于初始化 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+  http://www.springframework.org/schema/beans 
+  http://www.springframework.org/schema/beans/spring-beans-2.5.xsd"
+  default-autowire="byName">
+
+  <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>/WEB-INF/*.properties</value>
+			</list>
+    </property>
+  </bean>
+  
+  <import resource = "backstagemanagement-dao.xml"/>
+  <import resource = "backstagemanagement-servlet.xml"/>
+
+  <bean id="init" class="net.zhilink.tools.InitManager">
+    <!-- 用于存放图片路径 -->
+    <property name="rootLocalPath" value="${rootLocalPath}" />
+    <property name="rootHttpPath" value="${rootHttpPath}" />
+    <property name="updateIndexUrl" value="${updateIndexUrl}" />
+    <property name="linkServerUri" value="${linkServerUri}" />
+    <property name="reportUri" value="${reportUri}" />
+    <property name="sync_url" value="${sync_url}"></property>
+    <property name="sync_username" value="${sync_username}"></property>
+    <property name="sync_password" value="${sync_password}"></property>
+    <property name="zltvIspUrl" value="${zltvIspUrl}"></property>
+  </bean>
+</beans>

@@ -1,0 +1,41 @@
+Ext.define("app.model.ContVideoModel", {
+    extend: "Ext.data.Model",
+    fields: [
+        {name: 'c_id', type: 'string'},
+		{name: 'c_name', type: 'string'},
+		{name: 'c_type', type: 'int'},
+		{name: 'c_type_str', type: 'string'},
+		{name: 'ad_type', type: 'int'},
+		{name: 'pinyin', type: 'string'},
+		{name: 'c_status', type: 'int'},
+		{name: 'is_locked', type: 'string'},
+		{name: 'provider_id', type: 'string'},
+		{name: 'cont_superscript', type: 'string'},
+		
+		{name: 'cv_alias', type: 'string'},
+		{name: 'cv_year', type: 'int'},
+		{name: 'cv_month', type: 'int'},
+		{name: 'cv_duration', type: 'string'},
+		{name: 'cv_region', type: 'int'},
+		{name: 'cv_cont_type', type: 'int'},
+		{name: 'cv_quality_type', type: 'int'},
+		{name: 'cv_actors', type: 'string'},
+		{name: 'cv_director', type: 'string'},
+		{name: 'cv_screenwriter', type: 'string'},
+		{name: 'cv_language', type: 'string'},
+		{name: 'superscript_id', type: 'string'},
+		{name: 'cv_has_volume', type: 'string'},
+		{name: 'cv_prog_type', type: 'string'},
+		{name: 'cv_vol_total', type: 'string'},
+		{name: 'cv_play_url', type: 'string'},
+		{name: 'cv_description', type: 'string'},
+		{name: 'link_url', type: 'string'},
+		{name: 'zip_download_url_show', type: 'string'},
+		
+		{name: 'cv_vol_update_time', type: 'date', dateFormat: 'Y-m-d H:i:s'},
+		{name: 'active_time', type: 'date', dateFormat: 'Y-m-d H:i:s'},
+		{name: 'deactive_time', type: 'date', dateFormat: 'Y-m-d H:i:s'},
+		{name: 'create_time', type: 'date', dateFormat: 'Y-m-d H:i:s'},
+		{name: 'modify_time', type: 'date', dateFormat: 'Y-m-d H:i:s'}
+    ]
+});

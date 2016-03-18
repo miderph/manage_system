@@ -1,0 +1,9 @@
+@02_alter.table.zl_cont_sales.add.post_price.sql
+@02_alter.table.ZL_CONT_VIDEO.add.is_autoplay.NUMBER.sql
+@03_insert.into.zl_status_dict.ZL_CONT.TYPE.17.sql
+@03_insert.into.zl_status_dict.ZL_CONT_APPSTORE.TAGS.sql
+@03_update.zl_cont_appstore.TAGS.sql
+@10_comment_column_ZL_CONT.TYPE.sql
+@11_create.or.replace.view.v_base_content_client.sql
+@11_create.or.replace.view.v_getcontentdetail_client.sql
+@11_create.or.replace.view.v_getcontentlist_client.sql

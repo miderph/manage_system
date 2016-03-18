@@ -1,0 +1,1 @@
+alter table ZL_CONT_VIDEO_FILE modify PLAY_URL VARCHAR2(1024);

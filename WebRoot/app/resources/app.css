@@ -1,0 +1,89 @@
+.add{  
+	background-image: url(icons/add.gif)!important;  
+}
+
+.copy{  
+	background-image: url(icons/copy.gif)!important;  
+}
+
+.edit{  
+	background-image: url(icons/edit.gif)!important;  
+}
+
+.confirm_cont{  
+	width:55px;
+	height:14px;
+	background-image: url(icons/confirm_cont.gif)!important;  
+}
+
+.confirm_order{  
+	width:55px;
+	height:14px;
+	background-image: url(icons/confirm_order.gif)!important;  
+}
+
+.set{  
+	background-image: url(icons/set.gif)!important;  
+}
+
+.delete{  
+	background-image: url(icons/delete.gif)!important;  
+}
+
+.preview{
+	background-image: url(icons/preview.gif)!important;
+}
+
+.info{  
+	background-image: url(icons/info.gif)!important;  
+}
+
+.bind{  
+	background-image: url(icons/bind.gif)!important;  
+}
+
+.edit_sort{  
+	background-image: url(icons/edit_sort.gif)!important;  
+}
+
+.move_up{  
+	background-image: url(icons/page-prev.gif)!important;
+	-moz-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	-o-transform:rotate(90deg);
+	transform:rotate(90deg); 
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+.move_down{  
+	background-image: url(icons/page-next.gif)!important;
+	-moz-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	-o-transform:rotate(90deg);
+	transform:rotate(90deg); 
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+.move_up_first{  
+	background-image: url(icons/page-first.gif)!important;
+	-moz-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	-o-transform:rotate(90deg);
+	transform:rotate(90deg); 
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+.move_down_last{  
+	background-image: url(icons/page-last.gif)!important;
+	-moz-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	-o-transform:rotate(90deg);
+	transform:rotate(90deg); 
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+.header_title_center{
+	text-align:center;
+}
+
+.row_invalid { background: #cccccc; }

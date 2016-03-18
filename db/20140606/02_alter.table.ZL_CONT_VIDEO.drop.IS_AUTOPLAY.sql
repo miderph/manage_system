@@ -1,0 +1,1 @@
+alter table ZL_CONT_VIDEO drop column IS_AUTOPLAY;

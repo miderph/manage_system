@@ -1,0 +1,25 @@
+﻿--官方版还没有增加这几个字段，GetContentList 还未支持start_intent。截止日期20160217
+-- Add/modify columns 
+alter table ZL_CONT_VIDEO add ws_action varchar2(255);
+alter table ZL_CONT_VIDEO add ws_activity varchar2(255);
+alter table ZL_CONT_VIDEO add ws_extra varchar2(255);
+alter table ZL_CONT_VIDEO add ws_param_widgetv varchar2(255);
+alter table ZL_CONT_VIDEO add ws_param_layoutcode varchar2(128);
+alter table ZL_CONT_VIDEO add ws_param_url varchar2(512);
+alter table ZL_CONT_VIDEO add ws_param_extra varchar2(512);
+alter table ZL_CONT_VIDEO add ws_param_package varchar2(512);
+-- Add comments to the columns 
+comment on column ZL_CONT_VIDEO.ws_action
+  is 'apk 启动 action';
+comment on column ZL_CONT_VIDEO.ws_activity
+  is 'apk 启动activity';
+comment on column ZL_CONT_VIDEO.ws_extra
+  is '额外参数 json格式';
+comment on column ZL_CONT_VIDEO.ws_param_widgetv
+  is 'widget version';
+comment on column ZL_CONT_VIDEO.ws_param_layoutcode
+  is '启动参数 layoutCode';
+comment on column ZL_CONT_VIDEO.ws_param_url
+  is '启动参数 url';
+comment on column ZL_CONT_VIDEO.ws_param_extra
+  is '启动参数扩展 json格式';

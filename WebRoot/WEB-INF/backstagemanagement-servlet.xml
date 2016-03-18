@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+       default-autowire="byName">
+    <context:component-scan base-package="com.onewave.backstage.controller" />
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
+    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
+    
+    <!-- OnewaveBackStage请求.do和方法.do映射 -->
+    <!-- 在代码中使用注解实现映射，如果有文件上传需要在使用req前调用下方法req = BmUtil.resolveMultipart(req);因为注解方法映射不会自动把HttpServletRequest转化为MultipartHttpServletRequest，所以需要明确调用下。
+         方法映射路径的规则为：<controller名>/<方法别名>.do，建议全部用小写字母，单词之间用下划线分隔
+         注解使用的例子：
+         package com.onewave.bm.controller;
+         @Controller("contProviderController")
+         @RequestMapping("/contprovider/*")
+         public class ContProviderController extends MultiActionController {
+            
+            @RequestMapping("query_with_auth.do")
+            public void queryWithAuthHandler(HttpServletRequest req, HttpServletResponse resp)
+                    throws IOException {
+
+            }
+    
+    
+     -->
+
+</beans>

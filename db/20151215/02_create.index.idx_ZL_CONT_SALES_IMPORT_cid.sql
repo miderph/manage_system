@@ -1,0 +1,1 @@
+create index idx_ZL_CONT_SALES_IMPORT_cid on ZL_CONT_SALES_IMPORT (c_id);

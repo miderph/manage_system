@@ -1,0 +1,31 @@
+Ext.define("app.model.ColumnModel", {
+    extend: "Ext.data.Model",
+    fields: [
+        {name: 'c_id', type: 'string'},
+		{name: 'c_pid', type: 'string'},
+		{name: 'site_id', type: 'string'},
+		{name: 'title', type: 'string'},
+		{name: 'sub_count', type: 'string'},
+		{name: 'version', type: 'string'},
+		{name: 'status', type: 'string'},
+		{name: 'order_num', type: 'string'},
+		{name: 'struct_type', type: 'string'},
+		{name: 'provider_id', type: 'string'},
+		{name: 'act_type', type: 'string'},
+		{name: 'islocal', type: 'string'},
+		{name: 'link_url', type: 'string'},
+		{name: 'resource_type', type: 'string'},
+		{name: 'is_autoplay', type: 'string'},
+		{name: 'is_shortcut', type: 'string'},
+		{name: 'shortcut_contid', type: 'string'},
+		{name: 'user_group_id', type: 'string'},
+		{name: 'usergroup_ids_mac', type: 'string'},
+		{name: 'usergroup_ids_zone', type: 'string'},
+		{name: 'usergroup_ids_model', type: 'string'},
+		{name: 'active_time', type: 'date', dateFormat: 'Y-m-d H:i:s'},
+		{name: 'deactive_time', type: 'date', dateFormat: 'Y-m-d H:i:s'},
+		{name: 'create_time', type: 'date', dateFormat: 'Y-m-d H:i:s'},
+		{name: 'modify_time', type: 'date', dateFormat: 'Y-m-d H:i:s'},
+		{name: 'rule_ids',type: 'string'}
+    ]
+});

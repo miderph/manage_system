@@ -1,0 +1,114 @@
+
+Creating table ZL_MODULES
+=========================
+
+
+create table ZL_MODULES
+(
+  id        NUMBER,
+  name      VARCHAR2(200),
+  url       VARCHAR2(200),
+  parent_id NUMBER,
+  levels    NUMBER(1),
+  leaf      NUMBER(1),
+  path      VARCHAR2(200)
+)
+
+ORA-00955: name is already used by an existing object
+
+Comment added
+
+Comment added
+
+Comment added
+
+Comment added
+
+Comment added
+
+Comment added
+
+Comment added
+
+Creating table ZL_ROLES
+=======================
+
+
+create table ZL_ROLES
+(
+  id           NUMBER not null,
+  name         VARCHAR2(255) not null,
+  site_ids     VARCHAR2(1000),
+  provider_ids VARCHAR2(1000),
+  create_time  DATE,
+  update_time  DATE,
+  module_ids   VARCHAR2(1000)
+)
+
+ORA-00955: name is already used by an existing object
+
+Comment added
+
+Comment added
+
+Comment added
+
+Comment added
+
+Comment added
+
+Comment added
+
+Comment added
+
+alter table ZL_ROLES
+  add constraint PK_ZL_ROLES primary key (ID)
+
+ORA-02260: table can have only one primary key
+
+Creating table ZL_STB_PREFIXES
+==============================
+
+
+create table ZL_STB_PREFIXES
+(
+  id          NUMBER not null,
+  code        VARCHAR2(200) not null,
+  site_id     VARCHAR2(200),
+  provider_id VARCHAR2(200),
+  create_time DATE,
+  update_time DATE
+)
+
+ORA-00955: name is already used by an existing object
+
+Comment added
+
+Comment added
+
+Comment added
+
+Comment added
+
+alter table ZL_STB_PREFIXES
+  add constraint PK_ZL_STB_PREFIXES primary key (ID)
+
+ORA-02260: table can have only one primary key
+
+alter table ZL_OPERATORS add role_ids VARCHAR2(200)
+
+ORA-01430: column being added already exists in table
+
+Comment added
+
+Creating trigger TRG_ZL_ROLES
+=============================
+
+
+Trigger created
+
+Creating trigger TRG_ZL_STB_PREFIXES
+====================================
+
+
+Trigger created

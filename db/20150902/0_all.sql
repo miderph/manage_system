@@ -1,0 +1,6 @@
+@10_proc_import_app_deal.prc
+@1_proc_import_sales_insert_deal.prc
+@2_proc_import_sales_update_deal.prc
+@3_proc_import_sales_delete_deal.prc
+@4_proc_import_sales_deal.prc
+@5_alter_zl_cont_sales_import_add_comment.sql

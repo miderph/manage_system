@@ -1,0 +1,11 @@
+@1_add_bitmask_price.sql
+@2_add_table_zl_cont_rule.sql
+@3_alter_zl_menu_add_import_rule_ids.sql
+@4_alter_zl_rela_menu_cont_add_locked.sql
+@11_cont_rule_add_price_right.sql
+@12_sales_import_add_category_classify.sql
+@13_alter_zl_cont_sales_import_add_category_classify.sql
+@10_trg_zl_cont_rule.sql
+@7_proc_rule_all_deal.prc
+@8_proc_rule_by_menu_deal.prc
+@9_proc_rule_by_menu_datasql_deal.prc
